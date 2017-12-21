@@ -14,6 +14,9 @@
 		587B02D41FEB883E00079ED4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02D31FEB883E00079ED4 /* main.m */; };
 		587B02DE1FEB883F00079ED4 /* ZCYTutorialViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02DD1FEB883F00079ED4 /* ZCYTutorialViewTests.m */; };
 		587B02E91FEB883F00079ED4 /* ZCYTutorialViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02E81FEB883F00079ED4 /* ZCYTutorialViewUITests.m */; };
+		710C302852ACE077462C295D /* libPods-ZCYTutorialViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DB0A10420A134AE936A98A /* libPods-ZCYTutorialViewTests.a */; };
+		820780276C65E14369CA29C3 /* libPods-ZCYTutorialView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77125F61A246807A0B9E6490 /* libPods-ZCYTutorialView.a */; };
+		E159DAE820363E783D864724 /* libPods-ZCYTutorialViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9E440B7A93F7649408EF4F /* libPods-ZCYTutorialViewUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A9E440B7A93F7649408EF4F /* libPods-ZCYTutorialViewUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCYTutorialViewUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CC55EDC78055B0D89EBA494 /* Pods-ZCYTutorialViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYTutorialViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYTutorialViewTests/Pods-ZCYTutorialViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4AB34B939400B30E22B6D4F4 /* Pods-ZCYTutorialViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYTutorialViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYTutorialViewTests/Pods-ZCYTutorialViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		556ECB33B1B2178FA15651CC /* Pods-ZCYTutorialViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYTutorialViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYTutorialViewUITests/Pods-ZCYTutorialViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		587B02C11FEB883E00079ED4 /* ZCYTutorialView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCYTutorialView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587B02C41FEB883E00079ED4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		587B02C51FEB883E00079ED4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,6 +56,11 @@
 		587B02E41FEB883F00079ED4 /* ZCYTutorialViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCYTutorialViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		587B02E81FEB883F00079ED4 /* ZCYTutorialViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYTutorialViewUITests.m; sourceTree = "<group>"; };
 		587B02EA1FEB883F00079ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77125F61A246807A0B9E6490 /* libPods-ZCYTutorialView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCYTutorialView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F6C2A76DB3C8CEA893B560A /* Pods-ZCYTutorialViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYTutorialViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYTutorialViewUITests/Pods-ZCYTutorialViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A6DB0A10420A134AE936A98A /* libPods-ZCYTutorialViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCYTutorialViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FA12D2946FE351B7A5DF9E /* Pods-ZCYTutorialView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYTutorialView.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYTutorialView/Pods-ZCYTutorialView.release.xcconfig"; sourceTree = "<group>"; };
+		E1CD9686C7A039ADF9D6A27B /* Pods-ZCYTutorialView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYTutorialView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYTutorialView/Pods-ZCYTutorialView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820780276C65E14369CA29C3 /* libPods-ZCYTutorialView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				710C302852ACE077462C295D /* libPods-ZCYTutorialViewTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E159DAE820363E783D864724 /* libPods-ZCYTutorialViewUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38DC30663EBC9A0549558129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77125F61A246807A0B9E6490 /* libPods-ZCYTutorialView.a */,
+				A6DB0A10420A134AE936A98A /* libPods-ZCYTutorialViewTests.a */,
+				0A9E440B7A93F7649408EF4F /* libPods-ZCYTutorialViewUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		587B02B81FEB883E00079ED4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				587B02DC1FEB883F00079ED4 /* ZCYTutorialViewTests */,
 				587B02E71FEB883F00079ED4 /* ZCYTutorialViewUITests */,
 				587B02C21FEB883E00079ED4 /* Products */,
+				81EBD04A304120662F7AD9A9 /* Pods */,
+				38DC30663EBC9A0549558129 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +156,19 @@
 			path = ZCYTutorialViewUITests;
 			sourceTree = "<group>";
 		};
+		81EBD04A304120662F7AD9A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1CD9686C7A039ADF9D6A27B /* Pods-ZCYTutorialView.debug.xcconfig */,
+				A6FA12D2946FE351B7A5DF9E /* Pods-ZCYTutorialView.release.xcconfig */,
+				2CC55EDC78055B0D89EBA494 /* Pods-ZCYTutorialViewTests.debug.xcconfig */,
+				4AB34B939400B30E22B6D4F4 /* Pods-ZCYTutorialViewTests.release.xcconfig */,
+				556ECB33B1B2178FA15651CC /* Pods-ZCYTutorialViewUITests.debug.xcconfig */,
+				8F6C2A76DB3C8CEA893B560A /* Pods-ZCYTutorialViewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 587B02ED1FEB883F00079ED4 /* Build configuration list for PBXNativeTarget "ZCYTutorialView" */;
 			buildPhases = (
+				E7E6DD2BC70CF0213B880D14 /* [CP] Check Pods Manifest.lock */,
 				587B02BD1FEB883E00079ED4 /* Sources */,
 				587B02BE1FEB883E00079ED4 /* Frameworks */,
 				587B02BF1FEB883E00079ED4 /* Resources */,
+				C2877FA37784982F9E9B758A /* [CP] Embed Pods Frameworks */,
+				AB22DB1B4F6066F5B3B93688 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -153,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 587B02F01FEB883F00079ED4 /* Build configuration list for PBXNativeTarget "ZCYTutorialViewTests" */;
 			buildPhases = (
+				DCC4D59533B4FDDBFE3B9D02 /* [CP] Check Pods Manifest.lock */,
 				587B02D51FEB883F00079ED4 /* Sources */,
 				587B02D61FEB883F00079ED4 /* Frameworks */,
 				587B02D71FEB883F00079ED4 /* Resources */,
+				13A9A521AC6205CC1716BAC2 /* [CP] Embed Pods Frameworks */,
+				B769C3F547571D0C6F742714 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 587B02F31FEB883F00079ED4 /* Build configuration list for PBXNativeTarget "ZCYTutorialViewUITests" */;
 			buildPhases = (
+				0D59B82BB2611441BE5EDEDF /* [CP] Check Pods Manifest.lock */,
 				587B02E01FEB883F00079ED4 /* Sources */,
 				587B02E11FEB883F00079ED4 /* Frameworks */,
 				587B02E21FEB883F00079ED4 /* Resources */,
+				C2611E79548A99ABC82C163A /* [CP] Embed Pods Frameworks */,
+				B911C149F64C9EE79C2F8478 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,6 +303,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D59B82BB2611441BE5EDEDF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		13A9A521AC6205CC1716BAC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZCYTutorialViewTests/Pods-ZCYTutorialViewTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB22DB1B4F6066F5B3B93688 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZCYTutorialView/Pods-ZCYTutorialView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B769C3F547571D0C6F742714 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZCYTutorialViewTests/Pods-ZCYTutorialViewTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B911C149F64C9EE79C2F8478 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZCYTutorialViewUITests/Pods-ZCYTutorialViewUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2611E79548A99ABC82C163A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZCYTutorialViewUITests/Pods-ZCYTutorialViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2877FA37784982F9E9B758A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZCYTutorialView/Pods-ZCYTutorialView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC4D59533B4FDDBFE3B9D02 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7E6DD2BC70CF0213B880D14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		587B02BD1FEB883E00079ED4 /* Sources */ = {
@@ -415,6 +602,7 @@
 		};
 		587B02EE1FEB883F00079ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1CD9686C7A039ADF9D6A27B /* Pods-ZCYTutorialView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -429,6 +617,7 @@
 		};
 		587B02EF1FEB883F00079ED4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6FA12D2946FE351B7A5DF9E /* Pods-ZCYTutorialView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +632,7 @@
 		};
 		587B02F11FEB883F00079ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CC55EDC78055B0D89EBA494 /* Pods-ZCYTutorialViewTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +648,7 @@
 		};
 		587B02F21FEB883F00079ED4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AB34B939400B30E22B6D4F4 /* Pods-ZCYTutorialViewTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -473,6 +664,7 @@
 		};
 		587B02F41FEB883F00079ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 556ECB33B1B2178FA15651CC /* Pods-ZCYTutorialViewUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6MKVATW2Z;
@@ -487,6 +679,7 @@
 		};
 		587B02F51FEB883F00079ED4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F6C2A76DB3C8CEA893B560A /* Pods-ZCYTutorialViewUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6MKVATW2Z;
