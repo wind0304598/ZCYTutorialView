@@ -14,6 +14,11 @@
 		587B02D41FEB883E00079ED4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02D31FEB883E00079ED4 /* main.m */; };
 		587B02DE1FEB883F00079ED4 /* ZCYTutorialViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02DD1FEB883F00079ED4 /* ZCYTutorialViewTests.m */; };
 		587B02E91FEB883F00079ED4 /* ZCYTutorialViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02E81FEB883F00079ED4 /* ZCYTutorialViewUITests.m */; };
+		587B02F81FEB904700079ED4 /* ZCYTutorialView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02F71FEB904700079ED4 /* ZCYTutorialView.m */; };
+		587B02FC1FEB91A100079ED4 /* ZCYTutorialViewDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02FB1FEB91A100079ED4 /* ZCYTutorialViewDecorator.m */; };
+		587B03001FEB926300079ED4 /* ZCYTutorialViewDecoratorHint.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02FF1FEB926300079ED4 /* ZCYTutorialViewDecoratorHint.m */; };
+		587B03041FEB933000079ED4 /* ZCYTutorialViewDecoratorSpotlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B03031FEB933000079ED4 /* ZCYTutorialViewDecoratorSpotlight.m */; };
+		587B03081FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B03071FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.m */; };
 		710C302852ACE077462C295D /* libPods-ZCYTutorialViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DB0A10420A134AE936A98A /* libPods-ZCYTutorialViewTests.a */; };
 		820780276C65E14369CA29C3 /* libPods-ZCYTutorialView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77125F61A246807A0B9E6490 /* libPods-ZCYTutorialView.a */; };
 		E159DAE820363E783D864724 /* libPods-ZCYTutorialViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9E440B7A93F7649408EF4F /* libPods-ZCYTutorialViewUITests.a */; };
@@ -56,6 +61,16 @@
 		587B02E41FEB883F00079ED4 /* ZCYTutorialViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZCYTutorialViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		587B02E81FEB883F00079ED4 /* ZCYTutorialViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYTutorialViewUITests.m; sourceTree = "<group>"; };
 		587B02EA1FEB883F00079ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		587B02F61FEB904700079ED4 /* ZCYTutorialView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYTutorialView.h; sourceTree = "<group>"; };
+		587B02F71FEB904700079ED4 /* ZCYTutorialView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYTutorialView.m; sourceTree = "<group>"; };
+		587B02FA1FEB91A100079ED4 /* ZCYTutorialViewDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYTutorialViewDecorator.h; sourceTree = "<group>"; };
+		587B02FB1FEB91A100079ED4 /* ZCYTutorialViewDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYTutorialViewDecorator.m; sourceTree = "<group>"; };
+		587B02FE1FEB926300079ED4 /* ZCYTutorialViewDecoratorHint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYTutorialViewDecoratorHint.h; sourceTree = "<group>"; };
+		587B02FF1FEB926300079ED4 /* ZCYTutorialViewDecoratorHint.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYTutorialViewDecoratorHint.m; sourceTree = "<group>"; };
+		587B03021FEB933000079ED4 /* ZCYTutorialViewDecoratorSpotlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYTutorialViewDecoratorSpotlight.h; sourceTree = "<group>"; };
+		587B03031FEB933000079ED4 /* ZCYTutorialViewDecoratorSpotlight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYTutorialViewDecoratorSpotlight.m; sourceTree = "<group>"; };
+		587B03061FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYTutorialViewDecoratorBlurSpotlight.h; sourceTree = "<group>"; };
+		587B03071FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYTutorialViewDecoratorBlurSpotlight.m; sourceTree = "<group>"; };
 		77125F61A246807A0B9E6490 /* libPods-ZCYTutorialView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCYTutorialView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6C2A76DB3C8CEA893B560A /* Pods-ZCYTutorialViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYTutorialViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYTutorialViewUITests/Pods-ZCYTutorialViewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A6DB0A10420A134AE936A98A /* libPods-ZCYTutorialViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCYTutorialViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +141,9 @@
 		587B02C31FEB883E00079ED4 /* ZCYTutorialView */ = {
 			isa = PBXGroup;
 			children = (
+				587B02F61FEB904700079ED4 /* ZCYTutorialView.h */,
+				587B02F71FEB904700079ED4 /* ZCYTutorialView.m */,
+				587B02F91FEB917F00079ED4 /* Decorator */,
 				587B02C41FEB883E00079ED4 /* AppDelegate.h */,
 				587B02C51FEB883E00079ED4 /* AppDelegate.m */,
 				587B02C71FEB883E00079ED4 /* ViewController.h */,
@@ -154,6 +172,45 @@
 				587B02EA1FEB883F00079ED4 /* Info.plist */,
 			);
 			path = ZCYTutorialViewUITests;
+			sourceTree = "<group>";
+		};
+		587B02F91FEB917F00079ED4 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				587B02FD1FEB923900079ED4 /* HintView */,
+				587B03011FEB92F400079ED4 /* Spotlight */,
+				587B03051FEB937F00079ED4 /* BlurSpotlight */,
+				587B02FA1FEB91A100079ED4 /* ZCYTutorialViewDecorator.h */,
+				587B02FB1FEB91A100079ED4 /* ZCYTutorialViewDecorator.m */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		587B02FD1FEB923900079ED4 /* HintView */ = {
+			isa = PBXGroup;
+			children = (
+				587B02FE1FEB926300079ED4 /* ZCYTutorialViewDecoratorHint.h */,
+				587B02FF1FEB926300079ED4 /* ZCYTutorialViewDecoratorHint.m */,
+			);
+			path = HintView;
+			sourceTree = "<group>";
+		};
+		587B03011FEB92F400079ED4 /* Spotlight */ = {
+			isa = PBXGroup;
+			children = (
+				587B03021FEB933000079ED4 /* ZCYTutorialViewDecoratorSpotlight.h */,
+				587B03031FEB933000079ED4 /* ZCYTutorialViewDecoratorSpotlight.m */,
+			);
+			path = Spotlight;
+			sourceTree = "<group>";
+		};
+		587B03051FEB937F00079ED4 /* BlurSpotlight */ = {
+			isa = PBXGroup;
+			children = (
+				587B03061FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.h */,
+				587B03071FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.m */,
+			);
+			path = BlurSpotlight;
 			sourceTree = "<group>";
 		};
 		81EBD04A304120662F7AD9A9 /* Pods */ = {
@@ -447,8 +504,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				587B03041FEB933000079ED4 /* ZCYTutorialViewDecoratorSpotlight.m in Sources */,
+				587B03001FEB926300079ED4 /* ZCYTutorialViewDecoratorHint.m in Sources */,
 				587B02C91FEB883E00079ED4 /* ViewController.m in Sources */,
+				587B02F81FEB904700079ED4 /* ZCYTutorialView.m in Sources */,
 				587B02D41FEB883E00079ED4 /* main.m in Sources */,
+				587B03081FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.m in Sources */,
+				587B02FC1FEB91A100079ED4 /* ZCYTutorialViewDecorator.m in Sources */,
 				587B02C61FEB883E00079ED4 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
