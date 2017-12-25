@@ -14,6 +14,7 @@
 - (void)setup {
     [super setup];
     
+    [self.baseTutorialView insertSubview:self atIndex:0];
     self.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:.1f];
 }
 

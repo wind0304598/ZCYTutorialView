@@ -11,8 +11,9 @@
 #import "ZCYTutorialViewDecoratorHint.h"
 #import "ZCYTutorialViewDecoratorSpotlight.h"
 #import "ZCYTutorialViewDecoratorBlurSpotlight.h"
+#import "ZCYHintView.h"
 
-@interface ViewController ()
+@interface ViewController () <ZCYTutorialViewHintDelegate>
 
 @property (strong, nonatomic) UIButton *fatButton;
 @property (strong, nonatomic) ZCYTutorialView *tutorialView;
@@ -44,15 +45,8 @@
     });
     [self.view addSubview:self.fatButton];
     
-    UIView *hintView = [UIView new];
-    hintView.frame = CGRectMake(0, 0, 100, 100);
-    hintView.backgroundColor = [UIColor greenColor];
-    UILabel *hintLabel = [UILabel new];
-    hintLabel.text = @"嚕嚕嚕";
-    [hintLabel sizeToFit];
-    
     self.tutorialView = [ZCYTutorialView new];
-    self.tutorialView = [ZCYTutorialViewDecoratorHint makeWith:self.tutorialView andHintViews:hintView, hintLabel, nil];
+    self.tutorialView = [ZCYTutorialViewDecoratorHint makeWith:self.tutorialView andDelegate:self];
     self.tutorialView = [ZCYTutorialViewDecoratorSpotlight makeWith:self.tutorialView];
     [self.tutorialView focus:self.fatButton, textView, nil];
 }
@@ -61,6 +55,40 @@
     NSLog(@"Don't poke me!!!");
     
     [self.tutorialView show];
+}
+
+#pragma mark - ZCYTutorialViewHintDelegate
+
+- (ZCYHintObject *)tutorialView:(ZCYTutorialView *)tutorialView hintViewForFocusView:(UIView *)focusView atIndex:(NSUInteger)index {
+    if (index == 1) {
+        return nil;
+    }
+    
+    ZCYHintView *hintView = ({
+        ZCYHintView *view = [[ZCYHintView alloc] init];
+        view.labelBorderColor = [UIColor greenColor];
+        view.labelBorderWidth = 2;
+        view.labelBackgroundColor = [UIColor whiteColor];
+        view.labelBackgroundCornerRadius = 5;
+        view.font = [UIFont systemFontOfSize:16];
+        view.padding = UIEdgeInsetsMake(8, 16, 8, 16);
+        view.margin = UIEdgeInsetsMake(8, 8, 8, 8);
+        view.indicatorSize = CGSizeMake(10, 10);
+        view.direction = ZCYHintDirectionRight;
+        view.gap = 10;
+//        view.originOnDirectionNone = CGPointMake(0, 200);
+        [view setHintText:@"10101011010路人勿指我"];
+        view;
+    });
+    
+    return ({
+        ZCYHintObject *hint = [[ZCYHintObject alloc] init];
+        hint.view = hintView;
+        hint.viewDidAdd = ^(UIView *hintView) {
+            [(ZCYHintView *)hintView showHintAtView:focusView];
+        };
+        hint;
+    });
 }
 
 @end

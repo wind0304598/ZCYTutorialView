@@ -19,6 +19,7 @@
 		587B03001FEB926300079ED4 /* ZCYTutorialViewDecoratorHint.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02FF1FEB926300079ED4 /* ZCYTutorialViewDecoratorHint.m */; };
 		587B03041FEB933000079ED4 /* ZCYTutorialViewDecoratorSpotlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B03031FEB933000079ED4 /* ZCYTutorialViewDecoratorSpotlight.m */; };
 		587B03081FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B03071FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.m */; };
+		587B03131FEBB94100079ED4 /* ZCYHintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B03121FEBB94100079ED4 /* ZCYHintView.m */; };
 		710C302852ACE077462C295D /* libPods-ZCYTutorialViewTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6DB0A10420A134AE936A98A /* libPods-ZCYTutorialViewTests.a */; };
 		820780276C65E14369CA29C3 /* libPods-ZCYTutorialView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77125F61A246807A0B9E6490 /* libPods-ZCYTutorialView.a */; };
 		E159DAE820363E783D864724 /* libPods-ZCYTutorialViewUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9E440B7A93F7649408EF4F /* libPods-ZCYTutorialViewUITests.a */; };
@@ -71,6 +72,9 @@
 		587B03031FEB933000079ED4 /* ZCYTutorialViewDecoratorSpotlight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYTutorialViewDecoratorSpotlight.m; sourceTree = "<group>"; };
 		587B03061FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYTutorialViewDecoratorBlurSpotlight.h; sourceTree = "<group>"; };
 		587B03071FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYTutorialViewDecoratorBlurSpotlight.m; sourceTree = "<group>"; };
+		587B03101FEB9C5300079ED4 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		587B03111FEBB94100079ED4 /* ZCYHintView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYHintView.h; sourceTree = "<group>"; };
+		587B03121FEBB94100079ED4 /* ZCYHintView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYHintView.m; sourceTree = "<group>"; };
 		77125F61A246807A0B9E6490 /* libPods-ZCYTutorialView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCYTutorialView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6C2A76DB3C8CEA893B560A /* Pods-ZCYTutorialViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYTutorialViewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYTutorialViewUITests/Pods-ZCYTutorialViewUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A6DB0A10420A134AE936A98A /* libPods-ZCYTutorialViewTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZCYTutorialViewTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -141,6 +145,7 @@
 		587B02C31FEB883E00079ED4 /* ZCYTutorialView */ = {
 			isa = PBXGroup;
 			children = (
+				587B03091FEB990C00079ED4 /* ZCYHintLabel */,
 				587B02F61FEB904700079ED4 /* ZCYTutorialView.h */,
 				587B02F71FEB904700079ED4 /* ZCYTutorialView.m */,
 				587B02F91FEB917F00079ED4 /* Decorator */,
@@ -152,6 +157,7 @@
 				587B02CF1FEB883E00079ED4 /* LaunchScreen.storyboard */,
 				587B02D21FEB883E00079ED4 /* Info.plist */,
 				587B02D31FEB883E00079ED4 /* main.m */,
+				587B03101FEB9C5300079ED4 /* PrefixHeader.pch */,
 			);
 			path = ZCYTutorialView;
 			sourceTree = "<group>";
@@ -211,6 +217,15 @@
 				587B03071FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.m */,
 			);
 			path = BlurSpotlight;
+			sourceTree = "<group>";
+		};
+		587B03091FEB990C00079ED4 /* ZCYHintLabel */ = {
+			isa = PBXGroup;
+			children = (
+				587B03111FEBB94100079ED4 /* ZCYHintView.h */,
+				587B03121FEBB94100079ED4 /* ZCYHintView.m */,
+			);
+			path = ZCYHintLabel;
 			sourceTree = "<group>";
 		};
 		81EBD04A304120662F7AD9A9 /* Pods */ = {
@@ -509,6 +524,7 @@
 				587B02C91FEB883E00079ED4 /* ViewController.m in Sources */,
 				587B02F81FEB904700079ED4 /* ZCYTutorialView.m in Sources */,
 				587B02D41FEB883E00079ED4 /* main.m in Sources */,
+				587B03131FEBB94100079ED4 /* ZCYHintView.m in Sources */,
 				587B03081FEB941D00079ED4 /* ZCYTutorialViewDecoratorBlurSpotlight.m in Sources */,
 				587B02FC1FEB91A100079ED4 /* ZCYTutorialViewDecorator.m in Sources */,
 				587B02C61FEB883E00079ED4 /* AppDelegate.m in Sources */,
@@ -606,7 +622,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -655,7 +671,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -669,6 +685,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6MKVATW2Z;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZCYTutorialView/PrefixHeader.pch";
 				INFOPLIST_FILE = ZCYTutorialView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onion.ZCYTutorialView;
@@ -684,6 +702,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H6MKVATW2Z;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZCYTutorialView/PrefixHeader.pch";
 				INFOPLIST_FILE = ZCYTutorialView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onion.ZCYTutorialView;

@@ -25,6 +25,7 @@
         blurView.alpha = .3f;
         blurView;
     });
+    [self.baseTutorialView insertSubview:self atIndex:0];
     [self addSubview:self.blurView];
 }
 

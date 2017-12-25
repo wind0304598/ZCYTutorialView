@@ -17,7 +17,6 @@
 }
 
 - (void)setup {
-    [self.baseTutorialView addSubview:self];
 }
 
 - (NSArray<UIView *> *)focusArray {

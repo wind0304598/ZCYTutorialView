@@ -7,26 +7,25 @@
 
 #import "ZCYTutorialViewDecorator.h"
 
+@class ZCYHintObject;
+
+@protocol ZCYTutorialViewHintDelegate <NSObject>
+- (ZCYHintObject *)tutorialView:(ZCYTutorialView *)tutorialView
+           hintViewForFocusView:(UIView *)focusView
+                        atIndex:(NSUInteger)index;
+@end
+
 @interface ZCYTutorialViewDecoratorHint : ZCYTutorialViewDecorator
 
-@property (strong, setter=setHintViewArray:, nonatomic) NSArray<UIView *> *hintViews;
+@property (weak, nonatomic) id<ZCYTutorialViewHintDelegate> hintDelegate;
 
-/**
- An forbidden tutorialView area to HintViews.
- */
-@property (nonatomic) UIEdgeInsets hintPadding;
++ (ZCYTutorialView *)makeWith:(ZCYTutorialView *)tutorialView andDelegate:(id<ZCYTutorialViewHintDelegate>)delegate;
 
-/**
- A distance between hintView and focusView.
- */
-@property (nonatomic) CGFloat hintGap;
+@end
 
-+ (ZCYTutorialView *)makeWith:(ZCYTutorialView *)tutorialView andHintViews:(UIView *)hintViews, ... NS_REQUIRES_NIL_TERMINATION;
+@interface ZCYHintObject : NSObject
 
-+ (ZCYTutorialView *)makeWith:(ZCYTutorialView *)tutorialView andHintViewArray:(NSArray <UIView *>*)hintViews;
-
-- (void)setHintViews:(UIView *)hintViews, ... NS_REQUIRES_NIL_TERMINATION;
-
-- (void)setHintViewArray:(NSArray <UIView *> *)hintViews;
+@property (strong, nonatomic) UIView *view;
+@property (copy, nonatomic) void (^viewDidAdd)(UIView *hintView);
 
 @end
