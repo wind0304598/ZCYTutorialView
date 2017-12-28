@@ -48,11 +48,15 @@
     self.tutorialView = [ZCYTutorialView new];
     self.tutorialView = [ZCYTutorialViewDecoratorHint makeWith:self.tutorialView andDelegate:self];
     self.tutorialView = [ZCYTutorialViewDecoratorSpotlight makeWith:self.tutorialView];
-    [self.tutorialView focus:self.fatButton, textView, nil];
+    self.tutorialView.closeOnTouch = YES;
+    self.tutorialView.closeOnFocusedTouch = NO;
+    self.tutorialView.ignoreOnFocusedTouch = YES;
+//    self.tutorialView.dismissOnly = YES;
+    [self.tutorialView focus:textView, nil];
 }
 
 - (void)fabButtonDidClick:(id)sender {
-    NSLog(@"Don't poke me!!!");
+    NSLog(@"Don't poke me!!! I'm FatButton");
     
     [self.tutorialView show];
 }
@@ -60,9 +64,6 @@
 #pragma mark - ZCYTutorialViewHintDelegate
 
 - (ZCYHintObject *)tutorialView:(ZCYTutorialView *)tutorialView hintViewForFocusView:(UIView *)focusView atIndex:(NSUInteger)index {
-    if (index == 1) {
-        return nil;
-    }
     
     ZCYHintView *hintView = ({
         ZCYHintView *view = [[ZCYHintView alloc] init];
@@ -74,21 +75,31 @@
         view.padding = UIEdgeInsetsMake(8, 16, 8, 16);
         view.margin = UIEdgeInsetsMake(8, 8, 8, 8);
         view.indicatorSize = CGSizeMake(10, 10);
-        view.direction = ZCYHintDirectionRight;
+        view.direction = ZCYHintDirectionBottom;
         view.gap = 10;
 //        view.originOnDirectionNone = CGPointMake(0, 200);
         [view setHintText:@"10101011010路人勿指我"];
         view;
     });
     
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    [button setTitle:@"正面按我！" forState:UIControlStateNormal];
+    button.frame = CGRectMake(16, 400, 100, 30);
+    [button addTarget:self action:@selector(hintButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    
     return ({
         ZCYHintObject *hint = [[ZCYHintObject alloc] init];
-        hint.view = hintView;
+        hint.view = button;
         hint.viewDidAdd = ^(UIView *hintView) {
-            [(ZCYHintView *)hintView showHintAtView:focusView];
+//            [(ZCYHintView *)hintView showHintAtView:focusView];
         };
         hint;
     });
+}
+
+- (void)hintButtonClicked {
+    NSLog(@"My precious hintButton clicked");
 }
 
 @end

@@ -19,6 +19,42 @@
 - (void)setup {
 }
 
+- (BOOL)isShown {
+    return self.tutorialView.shown;
+}
+
+- (void)setCloseOnTouch:(BOOL)closeOnTouch {
+    self.tutorialView.closeOnTouch = closeOnTouch;
+}
+
+- (BOOL)isCloseOnTouch {
+    return self.tutorialView.closeOnTouch;
+}
+
+- (void)setCloseOnFocusedTouch:(BOOL)closeOnFocusedTouch {
+    self.tutorialView.closeOnFocusedTouch = closeOnFocusedTouch;
+}
+
+- (BOOL)isCloseOnFocusedTouch {
+    return self.tutorialView.closeOnFocusedTouch;
+}
+
+- (void)setDismissOnly:(BOOL)dismissOnly {
+    self.tutorialView.dismissOnly = dismissOnly;
+}
+
+- (BOOL)isDismissOnly {
+    return self.tutorialView.dismissOnly;
+}
+
+- (void)setIgnoreOnFocusedTouch:(BOOL)ignoreOnFocusedTouch {
+    self.tutorialView.ignoreOnFocusedTouch = ignoreOnFocusedTouch;
+}
+
+- (BOOL)isIgnoreOnFocusedTouch {
+    return self.tutorialView.ignoreOnFocusedTouch;
+}
+
 - (NSArray<UIView *> *)focusArray {
     return self.tutorialView.focusArray;
 }

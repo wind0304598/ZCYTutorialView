@@ -27,13 +27,48 @@
 #pragma mark - Overrides
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
-    for (UIView *focusView in self.focusArray) {
-        if (CGRectContainsPoint(focusView.frame, point)) {
-            return focusView;
+    if (!self.shown) {
+        return nil;
+    }
+    
+    if (self.closeOnTouch) {
+        if (self.dismissOnly) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self dismiss];
+            });
+            return self;
+        } else {
+            [self dismiss];
         }
     }
     
-    return self.isShown ? self : nil;
+    if (!self.ignoreOnFocusedTouch) {
+        for (UIView *focusView in self.focusArray) {
+            if (CGRectContainsPoint(focusView.frame, point)) {
+                if (!self.closeOnTouch && self.closeOnFocusedTouch) {
+                    if (self.dismissOnly) {
+                        dispatch_async(dispatch_get_main_queue(), ^{
+                            [self dismiss];
+                        });
+                        return self;
+                    } else {
+                        [self dismiss];
+                    }
+                }
+                return focusView;
+            }
+        }
+    }
+    
+    for (UIView *subview in [self.subviews reverseObjectEnumerator]) {
+        CGPoint convertedPoint = [subview convertPoint:point fromView:self];
+        UIView *hitTestView = [subview hitTest:convertedPoint withEvent:event];
+        if (hitTestView) {
+            return hitTestView;
+        }
+    }
+    
+    return self;
 }
 
 #pragma mark - Public Methods
@@ -64,6 +99,10 @@
 }
 
 - (void)dismiss {
+    if (!self.shown || !self.superview) {
+        return;
+    }
+    
     self.shown = NO;
     self.focusArray = nil;
     self.userInteractionEnabled = NO;
