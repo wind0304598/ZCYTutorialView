@@ -17,8 +17,13 @@
 @implementation ZCYTutorialView
 
 - (instancetype)init {
+    return [self initWithDelegate:nil];
+}
+
+- (instancetype)initWithDelegate:(id<ZCYTutorialViewDelegate>)delegate {
     self = [super initWithFrame:[UIApplication sharedApplication].keyWindow.frame];
     if (self) {
+        self.delegate = delegate;
         self.userInteractionEnabled = NO;
     }
     return self;
@@ -107,6 +112,10 @@
     self.focusArray = nil;
     self.userInteractionEnabled = NO;
     [self removeFromSuperview];
+    
+    if (self.delegate) {
+        [self.delegate dismissedWithTutorialView:self];
+    }
 }
 
 @end

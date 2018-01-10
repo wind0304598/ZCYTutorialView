@@ -13,7 +13,7 @@
 #import "ZCYTutorialViewDecoratorBlurSpotlight.h"
 #import "ZCYHintView.h"
 
-@interface ViewController () <ZCYTutorialViewHintDelegate>
+@interface ViewController () <ZCYTutorialViewDelegate, ZCYTutorialViewHintDelegate>
 
 @property (strong, nonatomic) UIButton *fatButton;
 @property (strong, nonatomic) ZCYTutorialView *tutorialView;
@@ -45,13 +45,13 @@
     });
     [self.view addSubview:self.fatButton];
     
-    self.tutorialView = [ZCYTutorialView new];
+    self.tutorialView = [[ZCYTutorialView alloc] initWithDelegate:self];
     self.tutorialView = [ZCYTutorialViewDecoratorHint makeWith:self.tutorialView andDelegate:self];
     self.tutorialView = [ZCYTutorialViewDecoratorSpotlight makeWith:self.tutorialView];
     self.tutorialView.closeOnTouch = YES;
     self.tutorialView.closeOnFocusedTouch = NO;
     self.tutorialView.ignoreOnFocusedTouch = YES;
-//    self.tutorialView.dismissOnly = YES;
+    self.tutorialView.dismissOnly = YES;
     [self.tutorialView focus:textView, nil];
 }
 
@@ -100,6 +100,12 @@
 
 - (void)hintButtonClicked {
     NSLog(@"My precious hintButton clicked");
+}
+
+#pragma mark - ZCYTutorialViewDelegate
+
+- (void)dismissedWithTutorialView:(ZCYTutorialView *)tutorialView {
+    NSLog(@"%@ dismissed.", tutorialView);
 }
 
 @end
