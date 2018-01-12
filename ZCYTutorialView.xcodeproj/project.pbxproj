@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5813EF5B2005F38900B7102F /* ZCYTutorialViewDecoratorAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 5813EF5A2005F38900B7102F /* ZCYTutorialViewDecoratorAudio.m */; };
+		5813EF6F20073A3000B7102F /* courseselection_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5813EF6E20073A3000B7102F /* courseselection_1.mp3 */; };
 		587B02C61FEB883E00079ED4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02C51FEB883E00079ED4 /* AppDelegate.m */; };
 		587B02C91FEB883E00079ED4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587B02C81FEB883E00079ED4 /* ViewController.m */; };
 		587B02CE1FEB883E00079ED4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587B02CD1FEB883E00079ED4 /* Assets.xcassets */; };
@@ -47,6 +49,9 @@
 		2CC55EDC78055B0D89EBA494 /* Pods-ZCYTutorialViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYTutorialViewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYTutorialViewTests/Pods-ZCYTutorialViewTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4AB34B939400B30E22B6D4F4 /* Pods-ZCYTutorialViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYTutorialViewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYTutorialViewTests/Pods-ZCYTutorialViewTests.release.xcconfig"; sourceTree = "<group>"; };
 		556ECB33B1B2178FA15651CC /* Pods-ZCYTutorialViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZCYTutorialViewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZCYTutorialViewUITests/Pods-ZCYTutorialViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5813EF592005F38900B7102F /* ZCYTutorialViewDecoratorAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCYTutorialViewDecoratorAudio.h; sourceTree = "<group>"; };
+		5813EF5A2005F38900B7102F /* ZCYTutorialViewDecoratorAudio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZCYTutorialViewDecoratorAudio.m; sourceTree = "<group>"; };
+		5813EF6E20073A3000B7102F /* courseselection_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = courseselection_1.mp3; sourceTree = "<group>"; };
 		587B02C11FEB883E00079ED4 /* ZCYTutorialView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZCYTutorialView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587B02C41FEB883E00079ED4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		587B02C51FEB883E00079ED4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +125,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5813EF552005ECA300B7102F /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				5813EF592005F38900B7102F /* ZCYTutorialViewDecoratorAudio.h */,
+				5813EF5A2005F38900B7102F /* ZCYTutorialViewDecoratorAudio.m */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		5813EF6D20073A3000B7102F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				5813EF6E20073A3000B7102F /* courseselection_1.mp3 */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+			usesTabs = 0;
+			wrapsLines = 1;
+		};
 		587B02B81FEB883E00079ED4 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +169,7 @@
 		587B02C31FEB883E00079ED4 /* ZCYTutorialView */ = {
 			isa = PBXGroup;
 			children = (
+				5813EF6D20073A3000B7102F /* Assets */,
 				587B03091FEB990C00079ED4 /* ZCYHintLabel */,
 				587B02F61FEB904700079ED4 /* ZCYTutorialView.h */,
 				587B02F71FEB904700079ED4 /* ZCYTutorialView.m */,
@@ -183,6 +208,7 @@
 		587B02F91FEB917F00079ED4 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
+				5813EF552005ECA300B7102F /* Audio */,
 				587B02FD1FEB923900079ED4 /* HintView */,
 				587B03011FEB92F400079ED4 /* Spotlight */,
 				587B03051FEB937F00079ED4 /* BlurSpotlight */,
@@ -356,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				587B02D11FEB883E00079ED4 /* LaunchScreen.storyboard in Resources */,
+				5813EF6F20073A3000B7102F /* courseselection_1.mp3 in Resources */,
 				587B02CE1FEB883E00079ED4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +548,7 @@
 			files = (
 				587B03041FEB933000079ED4 /* ZCYTutorialViewDecoratorSpotlight.m in Sources */,
 				587B03001FEB926300079ED4 /* ZCYTutorialViewDecoratorHint.m in Sources */,
+				5813EF5B2005F38900B7102F /* ZCYTutorialViewDecoratorAudio.m in Sources */,
 				587B02C91FEB883E00079ED4 /* ViewController.m in Sources */,
 				587B02F81FEB904700079ED4 /* ZCYTutorialView.m in Sources */,
 				587B02D41FEB883E00079ED4 /* main.m in Sources */,

@@ -33,7 +33,7 @@
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     if (!self.shown) {
-        return nil;
+        return [super hitTest:point withEvent:event];
     }
     
     if (self.closeOnTouch) {
@@ -41,7 +41,7 @@
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self dismiss];
             });
-            return self;
+            return [super hitTest:point withEvent:event];
         } else {
             [self dismiss];
         }
@@ -55,7 +55,7 @@
                         dispatch_async(dispatch_get_main_queue(), ^{
                             [self dismiss];
                         });
-                        return self;
+                        return [super hitTest:point withEvent:event];
                     } else {
                         [self dismiss];
                     }
@@ -73,7 +73,7 @@
         }
     }
     
-    return self;
+    return [super hitTest:point withEvent:event];
 }
 
 #pragma mark - Public Methods

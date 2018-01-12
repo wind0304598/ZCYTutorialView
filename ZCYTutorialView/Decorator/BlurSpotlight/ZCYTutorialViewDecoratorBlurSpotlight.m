@@ -19,10 +19,9 @@
     [super setup];
     
     self.blurView = ({
-        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
         UIVisualEffectView *blurView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
         blurView.frame = self.frame;
-        blurView.alpha = .3f;
         blurView;
     });
     [self.baseTutorialView insertSubview:self atIndex:0];
